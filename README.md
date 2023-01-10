@@ -1,3 +1,23 @@
+
+#  Finwe
+
+This application is named after the King of the Noldor in Tolkien's books. He was the first to sail from Middle-Earth to Valinor on the First Age, father of Fëanor, who created the Silmarils.
+I named it this way because this will be a huge ass boilerplate for many other applications due to re-usability, structure and ease of customization.
+Some (most) of these functionalities are separate packages or frameworks
+
+It is intended (so far still up for discussion) that we will use the following stack:
+
+  
+
+## The Current Stack
+
+  
+### Turborepo
+[Turborepo](https://vercel.com/docs/concepts/monorepos) is a Vercel developed monorepo to allow us to manage multiple projects in a single directory. They are a great way to organize your projects and make them easier to work with.
+
+
+
+
 # Turborepo starter
 
 This is an official npm starter turborepo.
