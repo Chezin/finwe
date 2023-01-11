@@ -1,6 +1,7 @@
 import { Button } from "ui";
 import { useRouter } from "next/router";
 import tw from "twin.macro";
+import * as bundle from "../bundles/pt_BR"
 
 const Container = tw.div`
 flex flex-col items-center justify-center h-full 
@@ -12,7 +13,7 @@ export default function About() {
 
   return (
     <Container>
-      <h1 className="text-5xl">Welcome to the Outer Space 🛰</h1>
+      <h1 className="text-5xl">{ bundle.brandName }</h1>
       <Button
         data-testid="signup-link"
         variant="outline"
@@ -20,7 +21,7 @@ export default function About() {
         color="blue.300"
         onClick={() => router.push("/signup")}
       >
-        Signup Now!
+        { bundle.signUp }
       </Button>
     </Container>
   );
