@@ -13,9 +13,7 @@ It is intended (so far still up for discussion) that we will use the following s
 
   
 ### Turborepo
-[Turborepo](https://vercel.com/docs/concepts/monorepos) is a Vercel developed monorepo to allow us to manage multiple projects in a single directory. They are a great way to organize your projects and make them easier to work with.
-
-
+[Turborepo](https://vercel.com/docs/concepts/monorepos) is a Vercel developed monorepo to allow us to manage multiple projects in a single directory. In our case, we will be using Turborepo as a boilerplate-esque framweork, so we don't have to set up any configurations and have the same clean architecture for every single web app that is forked from Fimwe.
 
 
 # Turborepo starter
