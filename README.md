@@ -1,7 +1,7 @@
 
 # Finwe
 
-  
+
 
 This application is named after the King of the Noldor in Tolkien's books. He was the first to sail from Middle-Earth to Valinor on the First Age, father of Fëanor, who created the Silmarils.
 
@@ -9,8 +9,8 @@ I named it this way because this will be a huge ass boilerplate for many other a
 
 Most of these functionalities are separate packages or frameworks, which are the following:
 
- 
-  
+
+
 
 ## The Current Stack
 
@@ -21,7 +21,7 @@ Most of these functionalities are separate packages or frameworks, which are the
 
  **Apps and Packages**
 
-  
+
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 
@@ -34,11 +34,11 @@ Most of these functionalities are separate packages or frameworks, which are the
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 
-  
+
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-  
+
 
 ### Utilities
 
@@ -50,19 +50,19 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 - [Prettier](https://prettier.io) for code formatting
 
-- [Jest](https://jestjs.io/) for unit testing 
+- [Jest](https://jestjs.io/) for unit testing
 
-- and a few more things like husky for pre-commit linting and scripting 
-  
+- and a few more things like husky for pre-commit linting and scripting
+
 
 ### Building and running
 
-  
 
+    $ npm i
     $ yarn run build
     $ yarn run dev
 
-  
+
 
 ### Remote Caching
 
@@ -79,7 +79,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
 
-  
+
 
 ```
 $ npx turbo link
@@ -87,7 +87,7 @@ $ npx turbo link
 ## The 'web' application
 
 This application is the one where we will do most of the work. Our structure will work as follows:
-- Any static text is bundled by language on `/bundle/{language}.js`so that we have a bit of leeway if a multi-language application is needed. 
+- Any static text is bundled by language on `/bundle/{language}.js`so that we have a bit of leeway if a multi-language application is needed.
 - `/pages` is where our routes will go
 - `/components` is where our components will go and so on..
 
@@ -95,7 +95,7 @@ You get the point, right?
 
 ## Useful Links
 
-  
+
 Turborepo:
 
 - [Pipelines](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
