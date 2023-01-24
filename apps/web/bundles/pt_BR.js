@@ -1,5 +1,5 @@
 module.exports = {
     logIn: "Entrar",
     signUp: "Registrar",
-    brandName: "Finwe"
+    brandName: "Finwe",
 };

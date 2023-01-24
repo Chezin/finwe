@@ -1,5 +1,5 @@
-import { AppProps } from "next/app";
 import "../globals.css";
+import { AppProps } from "next/app";
 import { GlobalStyles } from "twin.macro";
 import { ChakraProvider } from "ui";
 
@@ -15,7 +15,7 @@ export default function MyApp(props: AppProps) {
     <>
       <GlobalStyles />
       <ChakraProvider>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </ChakraProvider>
     </>
   );

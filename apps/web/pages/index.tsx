@@ -1,28 +1,25 @@
 import { Button } from "ui";
 import { useRouter } from "next/router";
 import tw from "twin.macro";
-import * as bundle from "../bundles/pt_BR"
+import * as bundle from "../bundles/pt_BR";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import ImageBanner from "../components/ImageBanner";
+import TextBox from "../components/TextBox";
 
 const Container = tw.div`
-flex flex-col items-center justify-center h-full 
-text-white font-bold p-6
+
 `;
 
-export default function About() {
+export default function Home() {
   const router = useRouter();
 
   return (
-    <Container>
-      <h1 className="text-5xl">{ bundle.brandName }</h1>
-      <Button
-        data-testid="signup-link"
-        variant="outline"
-        className="mt-10 text-2xl"
-        color="blue.300"
-        onClick={() => router.push("/signup")}
-      >
-        { bundle.signUp }
-      </Button>
-    </Container>
+    <div>
+      <NavBar></NavBar>
+      <ImageBanner></ImageBanner>
+      <TextBox></TextBox>
+      <Footer></Footer>
+    </div>
   );
 }
