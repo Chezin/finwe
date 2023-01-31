@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ImageBanner() {
   return (
     <section
@@ -9,8 +7,8 @@ export default function ImageBanner() {
       <img
         className="grayscale carousel carousel-indicators right-0 bottom-0 left-0 p-0 mb-4"
         src="https://mundodacerveja.com/imagens/33/img_produtos/27083/27083_1.jpg"
+        alt="internetis imundis num carrego"
       />
     </section>
   );
 }
-0;
