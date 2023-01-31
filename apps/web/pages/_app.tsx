@@ -10,13 +10,16 @@ require("../mocks");
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
-
-  return (
-    <>
-      <GlobalStyles />
-      <ChakraProvider>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </>
-  );
+  if (typeof window === "undefined") {
+    return <></>;
+  } else {
+    return (
+      <>
+        <GlobalStyles />
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </>
+    );
+  }
 }

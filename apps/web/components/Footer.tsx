@@ -52,7 +52,7 @@ const FacebookIcon = () => {
 
 export default function Footer() {
   return (
-    <footer className="text-center bg-purple-900 text-white flex justify-center">
+    <footer className="text-center bg-purple-900 text-white flex justify-center absolute w-full mb-0">
       <div className="container px-6 pt-6">
         <div className="flex justify-center mb-6">
           <a
@@ -192,10 +192,10 @@ export default function Footer() {
 
         <div className="mb-6">
           <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num
-            significa nadis i pareci latim. Praesent malesuada urna nisi, quis volutpat
-            erat hendrerit non. Nam vulputate dapibus. Manduma pindureta quium dia nois
-            paga.Leite de capivaris, leite de mula manquis sem cabeça.
+            Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num <br/>
+            significa nadis i pareci latim. Praesent malesuada urna nisi, quis volutpat <br/>
+            erat hendrerit non. Nam vulputate dapibus. Manduma pindureta quium dia nois <br/>
+            paga. Leite de capivaris, leite de mula manquis sem cabeça. 
           </p>
         </div>
       </div>
