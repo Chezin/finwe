@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div>
           <form action="">
-            <div className="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
+            <div className="grid md:grid-cols-3 gird-cols-1 gap-4 justify-center items-center">
               <div className="md:ml-auto md:mb-6">
                 <p className="">
                   <strong>Não sou faixa preta cumpadi</strong>

@@ -1,1 +1,3 @@
-export * from "@chakra-ui/react";
+export default function index() {
+    
+};
