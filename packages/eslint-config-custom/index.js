@@ -2,7 +2,6 @@ module.exports = {
   extends: ["next", "turbo", "airbnb", "airbnb-typescript", "prettier"],
   parserOptions: {
     project: "./tsconfig.json",
-    // tsconfigRootDir: __dirname,
   },
   rules: {
     "@next/next/no-html-link-for-pages": "off",

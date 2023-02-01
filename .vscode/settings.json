@@ -1,3 +1,3 @@
 {
-  "jira-plugin.workingProject": ""
+    "eslint.workingDirectories": [ "./apps/web", "./apps/docs"]
 }
