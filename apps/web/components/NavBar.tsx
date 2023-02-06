@@ -1,18 +1,19 @@
-const spanEffect =
-  "transition transform motion-reduce:transition-none motion-reduce:hover:transform-none duration-400 border-b-8 border-transparent hover:border-purple-500";
+import * as bundle from '../bundles/pt_BR'
 
 export default function NavBar() {
   return (
-    <div className="container bg-purple-900 min-w-full flex flex-row p-3.5 text-white sticky top-0 z-50">
-      <button type="button" className="ml-10 text-2xl mt-1">
-        BOM DIA BRASIL
+    <div className="navbar pr-16 pl-16 h-24 border">
+      <button type="button" className="navbar-start font-bold text-xl">
+        {bundle.brandName}
       </button>
-      <div className="flex flex-nowrap space-x-64 ml-96 justify-end p-0 mt-2">
-        <button type="button" className={spanEffect}>CACILDIS</button>
-        <button type="button" className={spanEffect}>VIDIS</button>
-        <button type="button" className={spanEffect}>LITRO</button>
-        <button type="button" className={spanEffect}>ABERTIS</button>
-      </div>
+      <div className="navbar-center">
+        <button type="button" className="btn btn-ghost">CACILDIS</button>
+        <button type="button" className="btn btn-ghost">VIDIS</button>
+        <button type="button" className="btn btn-ghost">LITRO</button>
+        </div>
+        <div className="navbar-end">
+        <button type="button" className="btn btn-outline btn-accent">{bundle.beFranchised}</button>
+        </div>
     </div>
   );
 }
