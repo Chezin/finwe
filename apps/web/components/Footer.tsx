@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="text-center bg-purple-900 text-white flex justify-center absolute w-full mb-0">
+    <footer className="text-center bg-first-800 text-first-100 flex justify-center absolute w-full mb-0">
       <div className="container px-6 pt-6">
         <div className="flex justify-center mb-6">
           <a
@@ -143,7 +143,7 @@ export default function Footer() {
             Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num <br/>
             significa nadis i pareci latim. Praesent malesuada urna nisi, quis volutpat <br/>
             erat hendrerit non. Nam vulputate dapibus. Manduma pindureta quium dia nois <br/>
-            paga. Leite de capivaris, leite de mula manquis sem cabeça. 
+            paga. Leite de capivaris, leite de mula manquis sem cabeça.
           </p>
         </div>
       </div>
