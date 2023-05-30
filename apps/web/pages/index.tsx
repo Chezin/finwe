@@ -1,14 +1,15 @@
 import tw from "twin.macro";
+import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import ImageBanner from "../components/ImageBanner";
+// import GoogleMap from "../components/GoogleMap";
 
 const Page = tw.div`
 font-poppins
 `;
 
 const Body = tw.div`
-ml-14 mt-14 mr-14
 `;
 
 export default function Home() {

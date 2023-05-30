@@ -1,19 +1,26 @@
-import * as bundle from '../bundles/pt_BR'
+/* eslint-disable react/button-has-type */
+import React from 'react';
 
-export default function NavBar() {
+function NavBar() {
   return (
-    <div className="navbar pr-16 pl-16 h-24 border">
-      <button type="button" className="navbar-start font-bold text-xl">
-        {bundle.brandName}
-      </button>
-      <div className="navbar-center">
-        <button type="button" className="btn btn-ghost">CACILDIS</button>
-        <button type="button" className="btn btn-ghost">VIDIS</button>
-        <button type="button" className="btn btn-ghost">LITRO</button>
-        </div>
-        <div className="navbar-end">
-        <button type="button" className="btn btn-outline btn-accent">{bundle.beFranchised}</button>
-        </div>
-    </div>
+    <nav className="outline-solid bg-transparent px-4 py-2 flex items-center justify-between">
+      <div>
+        {/* Logo */}
+        <img src="logo.png" alt="Logo" className="h-8" />
+      </div>
+      <div className="flex-grow text-center">
+        {/* Buttons */}
+        <button className="text-purple-900 mx-4">Button 1</button>
+        <button className="text-purple-900 mx-4">Button 2</button>
+        <button className="text-purple-900 mx-4">Button 3</button>
+        <button className="text-purple-900 mx-4">Button 4</button>
+      </div>
+      <div>
+        {/* Right button */}
+        <button className="text-white ring-purple-900 text-purple-900">Right Button</button>
+      </div>
+    </nav>
   );
 }
+
+export default NavBar;
