@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import ImageBanner from "../components/ImageBanner";
-// import GoogleMap from "../components/GoogleMap";
+import GoogleMap from "../components/GoogleMap";
 
 const Page = tw.div`
 font-poppins
@@ -19,6 +19,7 @@ export default function Home() {
         <NavBar />
         <Body>
           <ImageBanner />
+          <GoogleMap />
         </Body>
         <Footer />
       </Page>
