@@ -29,11 +29,12 @@ function GoogleMap() {
       };
 
       const googleMapScript = document.createElement("script");
-      googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`;
+      googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCwpWTIjORvQexKhgEhLoG9iN4siougcJQ&libraries=places`;
       googleMapScript.async = true;
       googleMapScript.defer = true;
       googleMapScript.addEventListener("load", initializeMap);
       googleMapScript.addEventListener("error", () => {
+        // eslint-disable-next-line no-console
         console.error("Error loading Google Maps API script.");
       });
       document.body.appendChild(googleMapScript);
@@ -49,9 +50,7 @@ function GoogleMap() {
     };
   }, []);
 
-  return (
-    <div ref={mapContainerRef} className="h-450px w-full md:w-2/3 max-w-66vw mx-auto" />
-  );
+  return <div ref={mapContainerRef} style={{ height: "400px" }} />;
 }
 
 export default GoogleMap;
