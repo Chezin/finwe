@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import mapStyles from "./mapStyles"; // Import your custom map styles here
 
 declare global {
   interface Window {
@@ -23,18 +24,18 @@ function GoogleMap() {
             {
               center: { lat: 0, lng: 0 },
               zoom: 10,
+              styles: mapStyles,
             }
           );
         }
       };
 
       const googleMapScript = document.createElement("script");
-      googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC3gVR4zU2XhACLvvUgXVFUpPaite6y_PQ&libraries=places`;
+      googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`;
       googleMapScript.async = true;
       googleMapScript.defer = true;
       googleMapScript.addEventListener("load", initializeMap);
       googleMapScript.addEventListener("error", () => {
-        // eslint-disable-next-line no-console
         console.error("Error loading Google Maps API script.");
       });
       document.body.appendChild(googleMapScript);
@@ -51,7 +52,7 @@ function GoogleMap() {
   }, []);
 
   return (
-    <div ref={mapContainerRef} className="h-400px w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4" />
+    <div ref={mapContainerRef} className="h-450px w-full md:w-2/3 max-w-66vw mx-auto" />
   );
 }
 
