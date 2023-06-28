@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import mapStyles from "./mapStyles"; // Import your custom map styles here
 
 declare global {
   interface Window {
@@ -24,7 +23,6 @@ function GoogleMap() {
             {
               center: { lat: 0, lng: 0 },
               zoom: 10,
-              styles: mapStyles,
             }
           );
         }
