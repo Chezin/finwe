@@ -29,7 +29,7 @@ function GoogleMap() {
       };
 
       const googleMapScript = document.createElement("script");
-      googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`;
+      googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC3gVR4zU2XhACLvvUgXVFUpPaite6y_PQ&libraries=places`;
       googleMapScript.async = true;
       googleMapScript.defer = true;
       googleMapScript.addEventListener("load", initializeMap);
