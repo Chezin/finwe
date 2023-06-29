@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import ImageBanner from "../components/ImageBanner";
 import GoogleMap from "../components/GoogleMap";
+import TextBox from "../components/TextBox";
 
 const Page = tw.div`
 font-poppins
@@ -19,6 +20,7 @@ export default function Home() {
         <NavBar />
         <Body>
           <ImageBanner />
+          <TextBox />
           <GoogleMap />
         </Body>
         <Footer />
