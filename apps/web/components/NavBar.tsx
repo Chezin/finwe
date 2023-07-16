@@ -33,9 +33,11 @@ function NavBar() {
       <div className="flex items-center">
         <div>
           <Image
-            src="../../../images/logo2.svg"
+            src="../../../../"
             alt="Refugio Açaí"
             className="h-8 pl-10"
+            width={100}
+            height={50}
           />
         </div>
         <div className="flex items-center mx-auto">
