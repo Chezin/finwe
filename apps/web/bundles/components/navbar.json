@@ -1,9 +1,9 @@
 {
   "buttons": [
-    { "label": "button 1 ph" },
-    { "label": "button 2 ph" },
-    { "label": "button 3 ph" },
-    { "label": "button 4 ph" }
+    { "label": "Botão" },
+    { "label": "Botão" },
+    { "label": "Botão" },
+    { "label": "Botão" }
   ],
-  "franchiseButtonText": "Torne-se um franquiado"
+  "franchiseButtonText": "Seja um franquiado"
 }

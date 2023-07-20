@@ -13,17 +13,10 @@ function GoogleMap() {
 
   const getGeolocation = () => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          setCenter({ lat: latitude, lng: longitude });
-        },
-        () => {
-          console.error("Error retrieving geolocation.");
-        }
-      );
-    } else {
-      console.error("Geolocation is not supported.");
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        setCenter({ lat: latitude, lng: longitude });
+      });
     }
   };
 
@@ -49,9 +42,7 @@ function GoogleMap() {
         isScriptLoaded = true;
         initializeMap();
       });
-      googleMapScript.addEventListener("error", () => {
-        console.error("Error loading Google Maps API script.");
-      });
+
       document.body.appendChild(googleMapScript);
     };
 

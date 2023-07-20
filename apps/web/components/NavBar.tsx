@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import logo from "../images/logo.svg";
 import bundle from "../bundles/components/navbar.json";
 
 interface Button {
@@ -23,45 +24,26 @@ function NavBar() {
   }, []);
 
   return (
-    <nav
-      className={`flex items-center justify-between ${
-        isScrolled ? "bg-transparent" : "bg-white"
-      } ${
-        isScrolled ? "sticky top-0" : "fixed top-0 left-0 right-0"
-      } h-16 transition-all duration-1000`}
-    >
-      <div className="flex items-center">
-        <div>
-          <Image
-            src="../../../../"
-            alt="Refugio Açaí"
-            className="h-8 pl-10"
-            width={100}
-            height={50}
-          />
-        </div>
-        <div className="flex items-center mx-auto">
+    <div className="navbar">
+      <div className="navbar-start mx-4">
+        <Image src={logo} alt="Refugio Açaí" height={75} />
+        <div className="ml-10">
           {bundle.buttons.map((button: Button) => (
             <button
               type="button"
-              className={`text-purple-900 mx-4 hover:scale-110 duration-100 cursor-pointer ${
-                isScrolled ? "text-white" : ""
-              }`}
+              className={`btn btn-sm mx-4 ${isScrolled ? "text-white" : ""}`}
             >
               {button.label}
             </button>
           ))}
         </div>
-        <button
-          type="button"
-          className="text-white ring-purple-900 text-purple-900 px-4 py-2 hover:scale-110 duration-100 cursor-pointer"
-        >
-          <div className="border-r-3 border-solid border-indigo-500">
-            {bundle.franchiseButtonText}
-          </div>
+      </div>
+      <div className="navbar-end">
+        <button type="button" className="btn mr-4">
+          {bundle.franchiseButtonText}
         </button>
       </div>
-    </nav>
+    </div>
   );
 }
 
