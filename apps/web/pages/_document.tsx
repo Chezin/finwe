@@ -22,11 +22,9 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" data-theme="acai">
         <Head>
-          <style
-            dangerouslySetInnerHTML={{ __html: (this.props as any).css }}
-          />
+          <style dangerouslySetInnerHTML={{ __html: (this.props as any).css }} />
         </Head>
         <body>
           <Main />
