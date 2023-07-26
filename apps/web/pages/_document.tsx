@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { extractCritical } from "@emotion/server";
@@ -22,7 +23,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en" data-theme="acai">
+      <Html lang="pt-br">
         <Head>
           <style dangerouslySetInnerHTML={{ __html: (this.props as any).css }} />
         </Head>
